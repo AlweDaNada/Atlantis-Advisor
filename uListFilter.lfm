@@ -1,0 +1,84 @@
+object ListFilterForm: TListFilterForm
+  Left = 252
+  Height = 351
+  Top = 151
+  Width = 192
+  BorderStyle = bsToolWindow
+  Caption = 'List Filter'
+  ClientHeight = 351
+  ClientWidth = 192
+  Color = clBtnFace
+  DesignTimePPI = 120
+  Font.Color = clWindowText
+  Font.Height = -14
+  Font.Name = 'MS Sans Serif'
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  Position = poScreenCenter
+  LCLVersion = '3.8.0.0'
+  object Button1: TButton
+    Left = 5
+    Height = 26
+    Top = 320
+    Width = 86
+    Caption = 'OK'
+    Default = True
+    ModalResult = 1
+    TabOrder = 0
+  end
+  object Button2: TButton
+    Left = 100
+    Height = 26
+    Top = 320
+    Width = 86
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 1
+  end
+  object ItemBox: TCheckListBox
+    Left = 5
+    Height = 266
+    Top = 5
+    Width = 181
+    Items.Strings = (
+      'Other Items'
+      'Men'
+      'Monsters'
+      'Magic Items'
+      'Weapon'
+      'Armor'
+      'Food'
+      'Mounts'
+      'Resources'
+      'Advanced Items'
+      'Tools'
+      'Trade goods'
+    )
+    ItemHeight = 21
+    Style = lbOwnerDrawFixed
+    TabOrder = 2
+    OnDrawItem = ItemBoxDrawItem
+    Data = {
+      0C000000000000000000000000000000
+    }
+  end
+  object CheckBox1: TCheckBox
+    Left = 10
+    Height = 20
+    Top = 280
+    Width = 36
+    Caption = 'All'
+    TabOrder = 3
+    OnClick = CheckBox1Click
+  end
+  object SpinEditEx1: TSpinEditEx
+    Left = 10
+    Height = 24
+    Top = 10
+    Width = 129
+    MaxLength = 0
+    TabOrder = 4
+    NullValue = 0
+    Value = 0
+  end
+end
