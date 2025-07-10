@@ -19,5 +19,5 @@ Therfore all future changes are licensed under GPL v3 license.
 
 The project is compiled under Lazarus IDE v.3.8 with -dLAZ
 
-Based on Atlantis Advizor v.3.31.0
+Based on Atlantis Advisor v.3.31.0
 All changes under {$ifdef LAZ}
