@@ -15,3 +15,9 @@ Orignal author, Gnawer aka Wredosoft Software LTD (gnawer@front.ru, http://www.w
 
 This program was given away in source code by the author for community members to support it and fix bugs. Exact license were not specified, but it is assumed that it is free to use and modify.
 Therfore all future changes are licensed under GPL v3 license.
+
+
+The project is compiled under Lazarus IDE v.3.8 with -dLAZ
+
+Based on Atlantis Advizor v.3.31.0
+All changes under {$ifdef LAZ}
